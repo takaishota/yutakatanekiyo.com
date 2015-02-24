@@ -1,0 +1,810 @@
+/*
+Theme Name: Yutaka Tanekiyo Web Site
+Theme URI: http://takaishota.net/sites/tky_hp/
+Description: 写真家 種清 豊 Webサイトのテーマ
+Version: 1.0
+Author: takaishota
+Author URI: http://takaishota.net
+*/
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Droid Sans', Helvetica ;
+	/*font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;*/
+	font-size: 11px;
+	color:#FFFFFF;
+	letter-spacing: 0.1em;
+	background: #191919;
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body#top {
+    overflow:hidden;
+}
+
+#wrapper {
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+body#top #wrapper {
+	position:static;
+}
+
+.hide {
+  display: none;
+}
+
+#overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 100;
+	background: #000;
+	opacity: .8;
+}
+
+/* header */
+header {
+    	position:fixed;
+	margin:22px 25px;
+	top:0;
+	left:0;
+	height:94%;
+	/*background-color: #f8f8f8;*/
+	/*border:4px solid #FFF;*/
+	font-size: 10px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	text-transform:uppercase;
+	z-index:10;
+	min-width:220px;
+	/*width:220px;*/
+	
+}
+
+header #menu {
+	position:absolute;
+	top: 92%;
+ 	left: 20px;
+	height:300px;
+	margin-top:-180px;
+	text-align: left;
+}
+
+header #title h1 {
+	margin:10px 0px 40px;
+	opacity: 0.9;
+}
+
+header #area {
+    color:#FFF;
+    margin-left:20px;	
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+header nav a{
+    color:#ADADAD;
+    font-weight:bold;
+}
+header nav a:hover{
+    color:#FFF;
+}
+
+/* social */
+#social {
+	margin: 50px 0px 20px;
+	height: 16px;
+}
+
+#news .contents #social {
+	display:block;
+	float:right;
+	position:relative;
+	
+	margin: 30px 4px;
+}
+
+#news .contents #social * {
+	vertical-align:middle;
+}
+
+#news .contents #social span {
+	float:left;
+	font-family: 'Karla', sans-serif;
+	font-weight:400;
+	padding-top:3px;
+}
+
+#news .contents a.facebook {
+	margin-left: 5px;
+}
+a.facebook {
+	width: 16px;
+	height: 16px;
+	background: url(/wp-content/themes/yutakatanekiyo_web/images/sprite.png) -10px -100px no-repeat;
+	float:left;
+}
+a:hover.facebook {
+	background-position: -10px -72px;
+}
+a.twitter {
+	margin-left: 5px;
+	width: 16px;
+	height: 16px;
+	background: url(/wp-content/themes/yutakatanekiyo_web/images/sprite.png) -10px -40px no-repeat;
+	float:left;
+}
+a:hover.twitter  {
+	background-position: -10px -10px;
+}
+a.rss {
+	display: block;
+	margin-left: 5px;
+	width: 16px;
+	height: 16px;
+	background: url(/wp-content/themes/yutakatanekiyo_web/images/sprite.png) -10px -280px no-repeat;
+	float:left;
+}
+a:hover.rss {
+	background-position: -10px -250px;
+}
+
+/* main */
+
+/* default */
+#main {
+	margin-left: 220px;
+	padding-top:90px;
+	padding-bottom:50px;
+}
+
+#main h1 {
+    color: #FFFFFF;
+	font-size: 30px;
+    letter-spacing: 0.1em;
+	margin-left: 44px;
+    padding-bottom:24px;
+    border-bottom: solid 3px #FFFFFF;
+	font-family: 'Karla', sans-serif;
+	font-weight:700;
+}
+
+#main dl {
+    color:#FFFFFF;
+}
+
+#main a {
+    color:#FFFFFF;
+}
+#main a:hover {
+    color:#CCCCCC;
+}
+
+#main .contents {
+    margin-top:50px;
+    margin-left:100px;
+	margin-right:50px;
+	max-width:747px;
+	padding:15px;
+	border:3px solid #FFF;
+}
+
+#main .contents a.detail,
+#main .contents article a {
+	font-weight:bold;
+	color:#7AC4B8;
+}
+#main .contents a:hover.detail,
+#main .contents article a:hover {
+	border-bottom:dotted 1px;
+}
+/* top */
+#work {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px;
+}
+
+#work li {
+    position:relative;
+    width: 300px;
+    height: 200px;
+    background: #151515;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    line-height: 0px;
+    opacity: .5;
+}
+
+#work li a {
+	cursor:default;
+}
+
+
+#work li.active {
+ 	opacity: 1;
+}
+
+#work li.active a {
+	cursor:pointer;
+}
+#work li img {
+	width: 300px;
+	height: 200px;
+}
+
+#work li .info {
+    position:absolute;
+    width:300px;
+    height:200px;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background:rgba(255, 255, 255, .8);
+    color:black;
+    font-size: 11px;
+    display: none;
+}
+#work li .info .text {
+    display: block;
+    margin-left: 10px;
+    margin-top: 164px;
+    overflow: hidden;
+}
+
+#work li .info .text span {
+    display:block;
+    line-height:1em;
+    margin-bottom:4px;
+}
+#work li .info .text span.category {
+    letter-spacing:0.1em;
+}
+
+#work li .info .map img {
+    position:absolute;
+    top:15px;
+    left:-38px;
+    width:358px;
+    height:173px;
+    opacity:0.6;
+}
+
+#slider {
+    height: 10px;
+    width: 900px;
+    position: absolute;
+    top: 38%;
+    margin-top: 140px;
+    -webkit-user-select: none;
+	/*overflow: hidden;*/
+}
+
+#slider-track {
+	height: 10px;
+    width: 900px;
+    background-color: rgba(194, 196, 196, .5);
+    opacity: .9;
+    position: absolute;
+	left:-1px;
+    -webkit-user-select: none;
+}
+
+#slider .ui-slider-handle {
+	left:10%;
+	position: absolute;
+	margin-top:1px;
+    height: 8px;
+    background-color:#FFFFFF;	
+}
+
+/* latest news */
+
+#latest_news {
+    font-size:8px;
+    position:absolute;
+    right: 36px;
+    bottom:32px;
+    color:#FFFFFF;
+    width:335px;
+}
+
+#latest_news .contents {
+    	margin:0;
+	padding:4px 0;
+}
+
+#latest_news .contents .new {
+	font-size:11px;
+	font-weight: bold;
+	padding-left: 5px;
+	color: red;
+	letter-spacing:1px;
+}
+
+#latest_news dl {	
+	padding:15px 10px;
+	border-bottom:3px solid #FFF;
+}
+
+#latest_news dl.last {
+    background:none;
+	border-bottom:none;
+}
+
+#latest_news dt {
+    letter-spacing: 0.2em;
+    float:left;
+    width:110px;
+}
+
+#latest_news .contents dt .category {
+	font-size:10px;
+	letter-spacing:1px;
+}
+
+#latest_news dd {
+    letter-spacing: 0.2em;
+	line-height:1.3em;
+	margin-left:120px;
+	width:180px;
+}
+
+#latest_news p {
+    letter-spacing: 0.2em;
+}
+
+/* details */
+
+#details {
+    position: absolute;
+    bottom: 0px;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    width: 600px;
+    z-index: 200;
+}
+
+#details .imgList {
+	text-align: center;
+}
+
+#details li {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 20px;
+    list-style: none;
+    overflow: hidden;
+    /*opacity: .5;*/
+}
+#details li img {
+    width: 100%;
+}
+#details li .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #111 url(/wp-content/themes/yutakatanekiyo_web/images/loader.gif) no-repeat center center;
+}
+
+#details .caption {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: 0;
+}
+
+#details .active {
+	opacity: 1;
+}
+#details .active .caption {
+	opacity: 1;
+}
+
+#details .caption .title,
+#details .caption .description {
+	position: absolute;
+	right: 0px;
+	padding-left: 30px;
+	padding-right: 7px;
+	height: 15px;
+	background: rgba(255,255,255, .7) url(/wp-content/themes/yutakatanekiyo_web/images/stripes-white.png);
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 10px;
+	text-transform: uppercase;
+	text-align: right; 
+}
+
+.mac.fx .caption .title,
+.mac.fx .caption .description {
+	padding-bottom: 2px;
+}
+
+#details a {
+	color: #CCFF66;
+	text-decoration: none;
+}
+#details a:hover {
+	color: #fff;
+}
+#details .title {
+	bottom: 37px;
+}
+#details .description {
+	bottom: 18px;
+}
+
+#details .info {
+	position: absolute;
+	top: 20px;
+	height: 400px;
+	color: #fff;	
+}
+#details .info h1,
+#details .info h2 {
+	padding: 0px 20px 20px 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+#details .info p {
+	padding: 0px 20px 20px 20px;
+	line-height: 18px;
+}
+
+#details span {
+	display: block;
+	padding-top: 3px;
+}
+
+::-moz-selection {
+	background-color: #FE57A1;
+	color: #fff;
+}
+::selection  {
+	background-color:#F15D5E;
+	color: #fff;
+}
+
+/* news */
+#news .contents {
+	padding:15px 0;
+	min-width:340px;
+}
+
+#news .contents dl {
+	margin-bottom:15px;
+    padding-left:15px;
+	padding-bottom:15px;
+	/*border-bottom:dotted 1px;*/
+	border-bottom:3px solid #FFF;
+}
+
+#news .contents dl.last {
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border:none;
+}
+
+#news .contents dt {
+    float:left;
+    width:110px;
+    margin-right:20px;
+	padding-left:16px;
+	font-size:11px;
+	vertical-align:baseline;
+	letter-spacing:0.2em;
+	
+	background: url(/wp-content/themes/yutakatanekiyo_web/images/arrow.png) 0px 0px no-repeat;
+}
+
+#news .contents dt .category {
+	font-size:10px;
+	letter-spacing:1px;
+}
+#news .contents dd {
+	padding-top:3px;
+	vertical-align:baseline;
+	margin-left:130px;
+}
+
+#news .contents .new {
+	font-size:11px;
+	font-weight: bold;
+	padding-left: 5px;
+	color: red;
+	letter-spacing:1px;
+}
+
+/* article */
+#news article {
+	line-height:1.6;
+	padding: 10px 15px 0;
+}
+
+#news article h1 {
+	margin-left: 0px;
+   	margin-top: 20px;
+   	padding-bottom:24px;
+	border-bottom:none;
+	font-size: 20px;
+	line-height:1.4;
+}
+
+#news article p {
+	margin:0 0 15px;
+}
+
+#news article span.date time {
+	color:#CCC;
+}
+
+/* profile */
+#profile #main p {
+	margin-bottom:20px;
+}
+
+#profile #main .contents h1 {
+	margin:0 0 20px;
+	padding:0;
+	border:none;
+	
+	overflow:hidden;
+}
+
+#profile #main .contents div {
+	margin-bottom:35px;
+}
+
+#profile #main .contents ul {
+	margin-bottom:15px;
+}
+
+#profile #main .contents p.category {
+	margin-bottom:10px;
+}
+
+#profile #main .contents .jp {
+    font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+    font-size: 28px;
+}
+#profile #main .contents .en, #profile #main .contents .about_photographer {
+    font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+    font-size: 14px;
+}
+#profile #main .contents .about_photographer {
+    margin-top:25px;
+    font-weight:bold;
+    letter-spacing:0.2em;
+}
+
+#profile #main .contents .about .jp,
+#profile #main .contents .exhibtion .jp,
+#profile #main .contents .media .jp,
+#profile #main .contents .publish .jp,
+#profile #main .contents .lecturer .jp {
+    font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+    font-size: 11px; 
+    letter-spacing:0.2em;
+}
+
+#profile #main .contents .name{
+	margin-top:0px;
+   	margin-bottom:0px;
+}
+
+#profile #main .contents .about p.name {
+		font-weight:normal;
+		font-size:14px;
+}
+
+#profile #main .contents div h2 {
+	margin-bottom:15px;
+}
+
+#profile #main .contents .about .jp {
+	line-height:2.5em;
+}
+
+#profile #main .contents .exhibtion .jp,
+#profile #main .contents .media .jp,
+#profile #main .contents .publish .jp,
+#profile #main .contents .lecturer .jp {
+	line-height:1.8em;
+}
+
+#profile #main .contents .about .en {
+    font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+    font-size: 11px;
+    line-height:2.5em;
+    letter-spacing:0.1em;
+}
+
+
+/* contact */
+#contact .contents {
+	width:550px;
+	padding:10px;
+	color:#000;
+	background-color:#FFF;
+}
+
+#contact .contents .inner {
+	font-weight:bold;
+	padding:15px;
+	border:3px solid #000;
+}
+
+#contact .contents .contact-info dl {
+	margin-bottom:10px;
+	color:#000;
+}
+#contact .contents .contact-info dt {
+    float:left;
+    width:40px;
+    margin-right:10px;
+}
+
+#contact .contents .contact-info dd span {
+    margin-right:10px;
+}
+
+#contact .contents p.intro {
+	margin-bottom:30px;
+}
+
+#contact .contents div.wpcf7 {
+	margin-bottom:30px;
+}
+
+#contact .contents div.wpcf7 p {
+	margin-bottom:20px;
+	line-height:2em;
+	font-size:12px;
+}
+
+#contact .contents div.wpcf7 p span.required {
+	color:red;
+	font-size:11px;
+}
+
+#contact .contents div.wpcf7 p.submitbtn {
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#contact .contents div.wpcf7 input,
+#contact .contents div.wpcf7 textarea {
+	padding:4px;
+	width:454px;
+	border:solid 1px #CCC;
+	background-color:#F7F7F7;
+	font-size:14px;
+	color:#666;
+	
+	max-width:504px;
+	/*border:solid 2px #CCC;
+	border-radius:6px;
+	padding:6px 8px;*/
+}
+
+#contact .contents div.wpcf7 p .wpcf7-not-valid-tip-no-ajax, #contact .contents div.wpcf7 .wpcf7-validation-errors {
+	color:red;
+	display:block;
+}
+#contact .contents div.wpcf7 .wpcf7-validation-errors {
+	font-size:130%;
+	height:20px;
+	padding:8px 0 0 50px;
+	background:url(/wp-content/themes/yutakatanekiyo_web/images/icon_error.png) no-repeat 25px 50%;
+}
+#contact .contents div.wpcf7 p.submitbtn input{
+	width:152px;
+	height:30px;
+	border:none;
+	background-color:#FFF;
+}
+
+#contact .contents div.wpcf7 input.wpcf7-submit-image {
+	width:152px;
+	height:30px;
+	border:none;
+	background-color:#FFF;
+}
+
+#contact .contents .contact-info {
+	border-top:dotted 1px;
+	padding-top:30px;
+}
+
+#contact .contents .contact-info p.eos {
+	margin-top:16px;
+	line-height:1.5em;
+}
+
+/* footer */
+
+footer {
+    color:#FFFFFF;
+    position:absolute;
+    bottom:6px;
+    right:36px;
+}
+
+footer li {
+	margin-left:10px;
+	float:left;
+}
+
+/* スマフォ対応 */
+@media screen and (max-width: 480px) {
+	body#top {
+    		overflow:scroll;
+	}
+	#slider {
+        	visibility:hidden;
+	}
+	header {
+		position:absolute;
+		margin:22px 10px;
+	}
+	header #title h1 {
+		margin:10px 0px 14px;
+	}
+	header #title h1 img {
+		width:96%;
+		height:96%;
+	}
+	header #menu {
+		position:relative;
+		margin-top: 240px;
+		top:0;
+	}
+	#work {
+    		top:48%;
+	}
+	#latest_news {
+		visibility:hidden;
+	}
+	footer {
+		visibility:hidden;
+	}
+
+	/*.flipsnap {
+   		width: 3200px;
+	}
+
+	.flipsnap:after {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+	}*/
+}
