@@ -1,3 +1,3 @@
 # yutakatanekiyo.com
 写真家のWebサイト。
-WordPressのテンプレートとして制作して、ニュースや画像はWordPressで管理できるようにしている。
+WordPressのカスタムテンプレートとして制作し、ニュースや画像はWordPressで管理できるようにしている。
